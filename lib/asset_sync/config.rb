@@ -40,7 +40,7 @@ module AssetSync
     # Google Storage
     attr_accessor :google_storage_secret_access_key, :google_storage_access_key_id
 
-    validates :existing_remote_files, :inclusion => { :in => %w(ignore) }
+    #validates :existing_remote_files, :inclusion => { :in => %w(ignore) }
 
     validates :fog_provider,          :presence => true
     validates :fog_directory,         :presence => true
